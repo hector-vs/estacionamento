@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #d3dacd;
+    --cor2: #C0BAB1;
+    --cor3: #8D877E;
+    --cor4: #5B534D;
+    --cor5: #28201B;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+#body-index{
+    overflow-y: hidden;
+  }
+ 
+  .avisologin{
+    text-indent: 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor5);
+    background-color: rgb(199, 199, 86);
+    padding: 10px;
+  }
+ 
+  main#main-login-area {
+     display: flex;
+     height: 100vh;
+     align-items: center;
+     justify-content: center;
+  }
+ 
+  #main-login {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ 
+     background-color: var(--cor3);
+     border-radius: 10px;
+     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.329);
+ 
+     width: 280px;
+     height: 310px;
+  }
+ 
+  #main-login > img {
+     margin-top: 0px;
+ 
+  }
+ 
+  #main-login > form {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 30px;
+  }
+ 
+  #main-login > form > input {
+     border-radius: 2px;
+     outline: none;
+     border: none;
+     height: 40px;
+     width: 230px;
+     margin-bottom: 10px;
+     background-color: var(--cor2);
+     color: var(--cor5);
+     font-size: 1.02em;
+     padding-left: 15px;
+     transition: 0.2s;
+  }
+ 
+  #main-login > form > input#inputenviar, #inputcadastrar, #enviaremail {
+    padding-left: 0px;
+    height: 45px;
+  }
+ 
+  #main-login > form > input:focus {
+    background-color: var(--cor4);
+    color: var(--cor2);
+  }
+ 
+  #main-login > form > input#inputenviar:hover, #inputcadastrar:hover, #enviaremail:hover {
+    background-color: rgb(63, 116, 63);
+    color: var(--cor2);
+    cursor: pointer;
+  }
+ 
+  #main-login > form > input#inputenviar:active, #inputcadastrar:active, #enviaremail:active {
+    background-color: rgb(63, 116, 63);
+    color: var(--cor2);
+  }
+
+  /*--------------------Main------------------*/
+
+  div.maindisplay{
+    height: auto;
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  div.maincontent{
+    max-width: 900px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+  }
+
+  table{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 800px;
+  }
+ 
+  table tr {
+    background-color: var(--cor4);
+    padding: 5px;
+  }
+ 
+  table tr th {
+    padding: 5px;
+    color: rgb(116, 216, 116);
+  }  
+ 
+  table tr td {
+    padding: 5px;
+    color: var(--cor1);
+  }
